@@ -1,0 +1,64 @@
+.map-card {
+  display: block;
+  background: #12121a;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 107, 0, 0.1);
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.map-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 107, 0, 0.4);
+  box-shadow: 0 20px 40px rgba(255, 107, 0, 0.1);
+}
+
+.map-card.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.map-card.disabled:hover {
+  transform: none;
+  border-color: rgba(255, 107, 0, 0.1);
+  box-shadow: none;
+}
+
+.map-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.map-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
+}
+
+.coming-soon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 107, 0, 0.9);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.map-info {
+  padding: 1.25rem;
+}
+
+.map-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.grenade-count {
+  color: #888;
+  font-size: 0.9rem;
+}

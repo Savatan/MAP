@@ -1,0 +1,135 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.auth-modal {
+  background: #1a1a24;
+  border-radius: 20px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  border: 1px solid rgba(255, 107, 0, 0.2);
+}
+
+.auth-modal .close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.auth-modal .close-btn:hover { color: white; }
+
+.auth-modal h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.google-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.9rem;
+  background: white;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.google-btn:hover { transform: scale(1.02); }
+.google-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: #666;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.divider span { padding: 0 1rem; }
+
+.auth-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-modal input {
+  padding: 0.9rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.auth-modal input:focus {
+  outline: none;
+  border-color: #ff6b00;
+}
+
+.auth-modal input::placeholder { color: #666; }
+
+.auth-modal .error {
+  color: #ff4444;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.submit-btn {
+  padding: 0.9rem;
+  background: linear-gradient(135deg, #ff6b00, #ff8533);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.submit-btn:hover { transform: scale(1.02); }
+.submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.switch-mode {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #888;
+}
+
+.switch-mode button {
+  background: none;
+  border: none;
+  color: #ff6b00;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
